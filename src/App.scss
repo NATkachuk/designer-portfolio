@@ -1,0 +1,10 @@
+@use "./Scss/mixin";
+@use "./Scss/vars";
+@use "./Scss/reset";
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+  background-color: vars.$background-color;
+  color: vars.$text-color;
+}

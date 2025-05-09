@@ -1,0 +1,19 @@
+@use "../../Scss/mixin";
+@use "../../Scss/vars";
+@use "../../Scss/reset";
+
+.header {
+    @include mixin.Flex(row, space-around, center, 50px);
+    padding: 25px 0px;
+   .logo {
+       @include mixin.Epilogue(20px, 600, 30px);
+       color: vars.$text-color;
+   }
+    &-container {
+       @include mixin.Flex(row, center, center, 50px);
+       &__btn {
+           @include mixin.Epilogue(17px, 400, 28px);
+
+       }
+    }
+}

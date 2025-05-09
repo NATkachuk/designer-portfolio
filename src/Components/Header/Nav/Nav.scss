@@ -1,0 +1,14 @@
+@use "../../../Scss/mixin";
+@use "../../../Scss/vars";
+@use "../../../Scss/reset";
+
+.nav {
+    &__list{
+        @include mixin.Flex(row, center, center, 50px);
+    }
+    &__link{
+        @include mixin.Epilogue(17px, 400, 28px);
+        color: vars.$text-color;
+    }
+
+}

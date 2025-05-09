@@ -1,0 +1,13 @@
+@mixin Epilogue($fs, $fw, $lh) {
+    font-family: 'Epilogue', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+ @mixin Flex($fd, $jc, $ai,$gp) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gp;
+ } 
