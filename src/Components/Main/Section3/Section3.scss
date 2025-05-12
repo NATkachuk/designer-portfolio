@@ -1,0 +1,28 @@
+@use "../../../Scss/mixin";
+@use "../../../Scss/vars";
+@use "../../../Scss/reset";
+
+.section3{
+    @include mixin.Flex(column, center, center, 60px);
+    &__title{
+        @include mixin.Epilogue(32px, 600, 42px);
+    }
+    &-container{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap: 67px;
+        .section3-box{
+            @include mixin.Flex(column, center, flex-start, 25px);
+            &__textbox{
+                @include mixin.Flex(column, center, flex-start, 10px);
+                &-text1{
+                    @include mixin.Epilogue(20px, 600, 30px);
+                }
+                &-text2{
+                    @include mixin.Epilogue(17px, 400, 27px);
+                }
+            }
+        }
+        
+    }
+}
