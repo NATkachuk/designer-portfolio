@@ -1,0 +1,45 @@
+@use "../../Scss/mixin";
+@use "../../Scss/vars";
+@use "../../Scss/reset";
+
+.footer {
+    @include mixin.Flex(row, center, flex-start, 190px);
+    padding: 70px 100px;
+    &-container {
+        @include mixin.Flex(column, center, flex-start, 50px);
+        &__title {
+            @include mixin.Epilogue(32px, 600, 42px);
+        }
+        &__text {
+            @include mixin.Epilogue(17px, 400, 27px);
+            width: 60%;
+        }
+        &__socials {
+            @include mixin.Flex(row, center, center, 25px);
+        }
+    }
+    &-form {
+        @include mixin.Flex(column, center, flex-start, 25px);
+        &__input {
+            @include mixin.Epilogue(17px, 400, 28px);
+            padding: 15px 20px;
+            border: 1px solid #D9D9D9;
+            border-radius: 5px;
+            width: 100%;
+        }
+        &__textarea {
+            @include mixin.Epilogue(17px, 400, 28px);
+            padding: 15px 20px;
+            border: 1px solid #D9D9D9;
+            border-radius: 5px;
+        }
+        &__btn {
+            @include mixin.Epilogue(17px, 400, 28px);
+            padding: 15px 20px;
+            border: 1px solid #D9D9D9;
+            border-radius: 5px;
+            color: vars.$background-color;
+            background-color: vars.$text-color;
+        }
+    }
+}
