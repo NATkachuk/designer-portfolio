@@ -1,0 +1,35 @@
+@use "../../../Scss/mixin";
+@use "../../../Scss/vars";
+@use "../../../Scss/reset";
+
+.section4{
+    @include mixin.Flex(column, center, center, 55px);
+    padding: 100px;
+    &__title{
+        @include mixin.Epilogue(32px, 600, 33px);
+    }
+    &-container{
+        @include mixin.Flex(row, center, center, 67px);
+        .section4-box{
+            @include mixin.Flex(column, center, flex-start, 80px);
+            background-color: vars.$card-color;
+            border: 1.5px solid #FFD285;
+            padding: 27px;
+            &__text{
+                @include mixin.Epilogue(20px, 600, 30px);
+            }
+            .section4-cont{
+                @include mixin.Flex(row, center, flex-start, 20px);
+                &__wrap{
+                    @include mixin.Flex(column, center, flex-start, 10px);
+                    &-stars{
+                        @include mixin.Flex(row, center, center, 5px);
+                    }
+                    &-text{
+                        @include mixin.Epilogue(17px, 400, 27px);
+                    }
+                }
+            }
+        }
+    }
+}
