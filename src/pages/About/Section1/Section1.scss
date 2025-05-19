@@ -23,3 +23,16 @@
         width: 40%;
     }
 }
+@media screen and (max-width: 375px) {
+    .section1-about {
+        @include mixin.Flex(column, flex-start, flex-start, 70px);
+        padding: 30px;
+        &__text{
+            width: 100%;
+        }
+        .section1-container{
+            padding: 0px;
+        }
+    }
+    
+}

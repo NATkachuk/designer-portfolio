@@ -23,3 +23,18 @@
         }
     }
 }
+@media screen and (max-width: 375px) {
+    .section2-about{
+        &__title{
+            width: 80%;
+        }
+        .section2-textbox{
+            &__text{
+                width: 90%;
+            }
+            &__text1{
+                width: 90%;
+            }
+        }
+    } 
+}
