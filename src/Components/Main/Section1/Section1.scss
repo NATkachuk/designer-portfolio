@@ -24,3 +24,31 @@
         padding: 60px 100px;
     }
 }
+@media screen and (max-width: 375px) {
+    .section1 {
+     @include mixin.Flex(column, center, center, 0px);
+        &-container1 {
+            @include mixin.Flex(column, center, center, 50px);
+            &__textbox {
+                @include mixin.Flex(column, center, center, 50px);
+                &-text1 {
+                    @include mixin.Epilogue(20px, 600, 30px);
+                }
+                &-title {
+                    @include mixin.Epilogue(65px, 600, 67px);
+                }
+                &-text2 {
+                    @include mixin.Epilogue(17px, 400, 27px);
+                    text-align: center
+                }
+            }
+        }
+        &-container2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 80px;
+            padding: 0px 30px;
+        }
+    }
+    
+}

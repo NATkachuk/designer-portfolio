@@ -16,4 +16,18 @@
 
        }
     }
+    &__menu {
+        display: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    .header {
+        &-container {
+            display: none;
+        }
+        &__menu {
+            display: block;
+        }
+    }
+    
 }

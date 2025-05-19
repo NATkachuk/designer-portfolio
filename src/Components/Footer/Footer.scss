@@ -43,3 +43,16 @@
         }
     }
 }
+@media screen and (max-width: 375px) {
+    .footer {
+        @include mixin.Flex(column, center, center, 80px);
+        padding: 70px 30px;
+        &-container {
+            @include mixin.Flex(column, center, center, 50px);
+            &__text {
+                width: 100%;
+            }
+        }
+    }
+    
+}

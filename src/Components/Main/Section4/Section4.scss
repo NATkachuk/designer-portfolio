@@ -33,3 +33,15 @@
         }
     }
 }
+@media screen and (max-width: 375px) {
+    .section4{
+        padding: 30px;
+        &-container{
+            @include mixin.Flex(column, center, center, 50px);
+            .section4-box{
+                @include mixin.Flex(column, center, center, 50px);
+            }
+        }
+    }
+    
+}

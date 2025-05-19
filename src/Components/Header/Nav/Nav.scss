@@ -10,5 +10,10 @@
         @include mixin.Epilogue(17px, 400, 28px);
         color: vars.$text-color;
     }
-
+}
+@media screen and (max-width: 375px) {
+    .nav {
+        display: none;
+    }
+    
 }

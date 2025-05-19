@@ -21,3 +21,25 @@
         }
     }
 }
+@media screen and (max-width: 375px) {
+    .section2 {
+        padding: 100px 30px;
+        &-container {
+            @include mixin.Flex(column, center, center, 56px);
+            .section2-box {
+                @include mixin.Flex(column, center, center, 50px);
+                &__textbox {
+                    @include mixin.Flex(column, center, center, 19px);
+                    &-text1 {
+                        @include mixin.Epilogue(27px, 600, 42px);
+                    }
+                    &-text2 {
+                        @include mixin.Epilogue(17px, 400, 27px);
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+    
+}

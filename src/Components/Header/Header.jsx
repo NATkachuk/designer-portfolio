@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import Nav from "./Nav/Nav"
 import "./Header.scss"
+import Menu from "../../assets/Homepage/Svg/Menu.svg"
 
 function Header() {
   return (
@@ -11,6 +12,7 @@ function Header() {
         <button className="header-container__btn">Sign In</button>
         <button className="header-container__btn">Sign Up</button>
       </div>
+      <img src={Menu} alt="Menu" className="header__menu" />
     </header>
   )
 }
