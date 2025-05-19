@@ -1,0 +1,25 @@
+@use "../../../Scss/mixin";
+@use "../../../Scss/vars";
+@use "../../../Scss/reset";
+
+.section2-about{
+    @include mixin.Flex(column, center, center, 70px);
+    margin: 120px 0px;
+    &__title{
+        @include mixin.Epilogue(24px, 500, 36px);
+        width: 64%;
+    }
+    .section2-textbox{
+        @include mixin.Flex(column, center, center, 20px);
+        &__text{
+            @include mixin.Epilogue(17px, 400, 27px);
+            width: 74%;
+        }
+        &__text1{
+            @include mixin.Epilogue(17px, 400, 27px);
+            color: vars.$about-color;
+            background-color: vars.$about2-color;
+            width: 74%;
+        }
+    }
+}
