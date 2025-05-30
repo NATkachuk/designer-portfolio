@@ -9,8 +9,8 @@ function Header() {
        <Link className="logo">Logo</Link>
       <Nav/>
       <div className="header-container">
-        <button className="header-container__btn">Sign In</button>
-        <button className="header-container__btn">Sign Up</button>
+        <button className="header-container__btn"><Link to="/signin">Sign In</Link></button>
+        <button className="header-container__btn"><Link to="/signup">Sign Up</Link></button>
       </div>
       <img src={Menu} alt="Menu" className="header__menu" />
     </header>

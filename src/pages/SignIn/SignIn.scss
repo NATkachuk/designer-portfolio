@@ -1,0 +1,27 @@
+@use "../../Scss/mixin";
+@use "../../Scss/vars";
+@use "../../Scss/reset";
+
+.form{
+    @include mixin.Flex(column, center, center, 20px);
+    padding: 100px;
+    @include mixin.Flex(column, center, center, 20px);
+    &__input{
+        @include mixin.Flex(row, center, center, 20px);
+        text-align: center;
+        border:1px solid vars.$about2-color;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    &__btn{
+        @include mixin.Epilogue(17px, 400, 27px);
+        padding: 15px 20px;
+        border: 1px solid vars.$about2-color;
+        background-color: vars.$background-color;
+        border-radius: 20px;
+    }
+    &__error{
+        @include mixin.Epilogue(17px, 400, 27px);
+        color: red;
+    }
+}
